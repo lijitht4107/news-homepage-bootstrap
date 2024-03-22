@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+:root{
+    --Dark-grayish-blue: hsl(236, 13%, 42%);
+    --Soft-red: hsl(5, 85%, 63%);
+    --Soft-orange: hsl(35, 77%, 62%);
+}
+
+body{
+    font-family: "Inter", sans-serif;
+}
+.navbar{
+    animation: .8s ease-in 1s navSlide;
+}
+.links ul li  {
+   list-style: none;
+   text-decoration: none;
+}
+.links ul li a{
+    text-decoration: none;
+    color: var(--Dark-grayish-blue);
+}
+.links ul li a:hover{
+    color: var(--Soft-red)
+}
+.new_articles{
+    background-color:hsl(240, 100%, 5%) ;
+    padding: 40px 30px;
+    animation: .8s ease-in 1s SlideIn;
+}
+.heading{
+    font-size: 4rem;
+    font-weight: 600;
+    color:var(--Soft-orange);
+   
+}
+.article a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 1.5rem;
+    display: inline-block;
+    
+
+}
+.article a:hover{
+    color: var(--Soft-orange);
+}
+.article p{
+    color: gray;
+    padding: 10px 0;
+}
+.article{
+    border-bottom: 1px solid gray;
+    padding-top: 2rem;
+}
+.hero_text h1{
+    font-size: 3rem;
+    font-weight: 800;
+}
+.call_out p{
+    color: var(--Dark-grayish-blue);
+}
+.button{
+    border: 1px solid black;
+    border: none;
+    text-decoration: none;
+    padding: 10px 30px ;
+    color: white;
+    background-color: var(--Soft-red);
+    font-size: .8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.button:hover{
+    background-color: hsl(240, 100%, 5%);
+    color: white;
+}
+.content h2{
+    color: hsl(233, 8%, 79%);
+    font-size: 2rem;
+}
+.content h3{
+    font-size: 1rem;
+    font-weight: 800;
+    
+}
+.content p{
+    color: var(--Dark-grayish-blue);
+}
+.content h3:hover{
+    color: var(--Soft-red);
+    cursor: pointer;
+}
+.container article img{
+    width: 150px;
+}
+@keyframes SlideIn{
+    0%{
+        transform: translateX(100PX);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes navSlide{
+  0%{
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100%{
+    transform:translateX(0px) ;
+    opacity: 1;
+  }
+}
